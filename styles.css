@@ -1,0 +1,160 @@
+body {
+    font-family: 'Trirong', serif;
+    background-color: white;
+    color: lightslategrey;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header {
+    background-color: maroon; 
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: gold; 
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1rem auto;
+    display: block;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  main p {
+    margin-bottom: 1rem;
+  }
+
+  .content-group {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  
+  .content-group img {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .content-group h3 {
+    margin-top: 0;
+    color: maroon;
+  }
+  
+  button,
+  input[type="submit"] {
+    padding: 0.6rem 1.2rem;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: goldenrod;
+  }
+  
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-image,
+  .contact-form {
+    flex: 1 1 300px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 1rem;
+    }
+  
+    .contact-grid {
+      flex-direction: column;
+    }
+  }
